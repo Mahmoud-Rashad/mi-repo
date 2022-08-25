@@ -6,7 +6,8 @@ export class HealthController {
   @GET
   async healthCheck(): Promise<{status: string;}> {
     return {
-      status: 'UP'
+      status: 'UP',
+      message : 'App is up and running wiht TechZone Automation'
     };
   }
 }
